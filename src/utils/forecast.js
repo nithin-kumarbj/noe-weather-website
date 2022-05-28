@@ -15,7 +15,7 @@ const forecast=(latitude,longitude,callback)=>{
             // console.log(is_daytime)
             // console.log(current)
 
-            callback(undefined,body.current.weather_descriptions[0]+ '. It like '+ current.temperature+' degrees out, but feels like '+current.feelslike+' degrees. The humidity is '+current.humidity+'')
+            callback(undefined,body.current.weather_descriptions[0]+ '. It like '+ current.temperature+' degrees out, but feels like '+current.feelslike+' degrees. The humidity is '+current.humidity+'%.')
         }
     })
 
